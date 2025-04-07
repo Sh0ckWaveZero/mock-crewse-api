@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: mock-crewse-api
+    image: mock-crewse-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "6032:6032"
+    environment:
+      - NODE_ENV=production
+    restart: always
