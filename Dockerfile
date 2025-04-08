@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Cache packages installation
 COPY package.json package.json
-COPY bun.lockb bun.lockb
+COPY bun.lock bun.lock
 
 RUN bun install
 
